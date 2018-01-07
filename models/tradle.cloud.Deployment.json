@@ -1,0 +1,14 @@
+{
+  "type": "tradle.Model",
+  "title": "MyCloud",
+  "id": "tradle.cloud.Deployment",
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.cloud.Configuration"
+  ],
+  "properties": {
+    "scale": {
+      "type": "number"
+    }
+  }
+}

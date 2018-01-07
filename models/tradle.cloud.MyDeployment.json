@@ -1,0 +1,18 @@
+{
+  "type": "tradle.Model",
+  "title": "My MyCloud",
+  "id": "tradle.cloud.MyDeployment",
+  "subClassOf": "tradle.MyProduct",
+  "properties": {
+    "myProductId": {
+      "title": "MyCloud ID",
+      "type": "string"
+    }
+  },
+  "required": [
+    "myProductId"
+  ],
+  "viewCols": [
+    "myProductId"
+  ]
+}

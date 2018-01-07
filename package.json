@@ -1,0 +1,19 @@
+{
+  "name": "@tradle/models-cloud",
+  "version": "1.0.0",
+  "main": "./models.json",
+  "repository": "https://github.com/tradle/models-cloud",
+  "author": "Mark Vayngrib <mark@tradle.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@tradle/models": "github:tradle/models",
+    "@tradle/pack-models": "^2.0.0",
+    "@tradle/validate-model": "^5.0.0",
+    "husky": "^0.14.3"
+  },
+  "scripts": {
+    "validate": "PRINT_ONLY=1 validate-model ./models.json --depends-on @tradle/models",
+    "merge": "pack-models -i ./models -o ./models.json",
+    "precommit": "npm run merge && npm run validate && git add models.json"
+  }
+}

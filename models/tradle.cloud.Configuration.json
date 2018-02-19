@@ -8,39 +8,40 @@
       "type": "string",
       "description": "the name of your organization"
     },
-    "scale": {
-      "type": "number",
-      "description": "in millions of customers, e.g. 100 means 100M customers"
+    "adminEmail": {
+      "type": "string",
+      "title": "AWS admin email",
+      "description": "individual or group that manages your AWS account",
+      "range": "email"
+    },
+    "hrEmail": {
+      "type": "string",
+      "title": "HR email",
+      "description": "individual or group that manages employee onboarding",
+      "range": "email"
     },
     "domain": {
       "type": "string",
       "description": "top level domain you own",
       "pattern": "^[a-zA-Z0-9-_.]*$"
-    },
-    "formattedScale": {
-      "type": "string",
-      "displayAs": "~{1}M customers",
-      "title": "MyCloud scale",
-      "group": [
-        "scale"
-      ],
-      "readOnly": true,
-      "displayName": true
     }
   },
   "viewCols": [
     "name",
-    "formattedScale",
-    "domain"
+    "domain",
+    "adminEmail",
+    "hrEmail"
   ],
   "editCols": [
     "name",
-    "scale",
-    "domain"
+    "domain",
+    "adminEmail",
+    "hrEmail"
   ],
   "required": [
     "name",
-    "scale",
-    "domain"
+    "domain",
+    "adminEmail",
+    "hrEmail"
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "type": "tradle.Model",
+  "title": "Child MyCloud Deployment",
+  "id": "tradle.cloud.ChildDeployment",
+  "properties": {
+    "uuid": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "identity": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "configuration": {
+      "type": "object",
+      "ref": "tradle.cloud.Configuration"
+    }
+  },
+  "required": [
+    "uuid"
+  ]
+}

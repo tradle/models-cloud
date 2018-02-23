@@ -3,15 +3,18 @@
   "title": "Child MyCloud Deployment",
   "id": "tradle.cloud.ChildDeployment",
   "properties": {
-    "uuid": {
+    "deploymentUUID": {
       "type": "string"
     },
-    "url": {
+    "apiUrl": {
       "type": "string"
     },
     "identity": {
       "type": "object",
       "ref": "tradle.Identity"
+    },
+    "stackId": {
+      "type": "string"
     },
     "configuration": {
       "type": "object",
@@ -19,6 +22,7 @@
     }
   },
   "required": [
-    "uuid"
+    "deploymentUUID",
+    "configuration"
   ]
 }

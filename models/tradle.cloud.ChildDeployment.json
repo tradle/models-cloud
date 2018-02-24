@@ -19,6 +19,10 @@
     "configuration": {
       "type": "object",
       "ref": "tradle.cloud.Configuration"
+    },
+    "configuredBy": {
+      "type": "object",
+      "ref": "tradle.Identity"
     }
   },
   "required": [

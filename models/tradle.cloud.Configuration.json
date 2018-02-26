@@ -24,6 +24,12 @@
       "type": "string",
       "description": "top level domain you own",
       "pattern": "^[a-zA-Z0-9-_.]*$"
+    },
+    "stackPrefix": {
+      "type": "string",
+      "description": "AWS stack name prefix, of the format tdl-xxxx-tdl (e.g. tdl-example-tdl)",
+      "pattern": "^tdl-[a-zA-Z0-9-]+-ltd$",
+      "default": "tdl-tradle-tdl"
     }
   },
   "viewCols": [
@@ -42,6 +48,7 @@
     "name",
     "domain",
     "adminEmail",
-    "hrEmail"
+    "hrEmail",
+    "stackPrefix"
   ]
 }

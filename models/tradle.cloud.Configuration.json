@@ -42,7 +42,8 @@
     "name",
     "domain",
     "adminEmail",
-    "hrEmail"
+    "hrEmail",
+    "stackPrefix"
   ],
   "required": [
     "name",

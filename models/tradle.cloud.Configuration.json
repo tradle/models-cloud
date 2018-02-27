@@ -27,9 +27,9 @@
     },
     "stackPrefix": {
       "type": "string",
-      "description": "AWS stack name prefix, of the format tdl-xxxx-tdl (e.g. tdl-example-tdl)",
+      "description": "AWS stack name prefix, of the format tdl-xxxx-ltd (e.g. tdl-example-ltd)",
       "pattern": "^tdl-[a-zA-Z0-9-]+-ltd$",
-      "default": "tdl-tradle-tdl"
+      "default": "tdl-tradle-ltd"
     }
   },
   "viewCols": [

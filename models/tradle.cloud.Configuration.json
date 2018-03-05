@@ -25,6 +25,11 @@
       "description": "top level domain you own",
       "pattern": "^[a-zA-Z0-9-_.]*$"
     },
+    "region": {
+      "type": "object",
+      "ref": "tradle.cloud.AWSRegion",
+      "description": "AWS Region"
+    },
     "stackPrefix": {
       "type": "string",
       "title": "Stack name, must be alphanumeric, e.g. mytradle",
@@ -41,6 +46,7 @@
   "editCols": [
     "name",
     "domain",
+    "region",
     "adminEmail",
     "hrEmail",
     "stackPrefix"
@@ -50,6 +56,7 @@
     "domain",
     "adminEmail",
     "hrEmail",
+    "region",
     "stackPrefix"
   ]
 }

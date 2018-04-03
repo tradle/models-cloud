@@ -38,5 +38,6 @@
   "primaryKeys": {
     "hashKey": "permalink",
     "rangeKey": "clientId"
-  }
+  },
+  "indexes": []
 }

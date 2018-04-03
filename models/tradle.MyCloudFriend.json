@@ -34,5 +34,11 @@
   ],
   "primaryKeys": {
     "hashKey": "_identityPermalink"
-  }
+  },
+  "indexes": [
+    {
+      "hashKey": "domain",
+      "rangeKey": "_time"
+    }
+  ]
 }

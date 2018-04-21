@@ -19,25 +19,21 @@
     "org": {
       "type": "object",
       "ref": "tradle.Organization"
-    },
-    "_identityPermalink": {
-      "type": "string",
-      "virtual": true
     }
   },
   "required": [
     "identity",
-    "_identityPermalink",
     "name",
     "url",
     "domain"
   ],
-  "primaryKeys": {
-    "hashKey": "_identityPermalink"
-  },
   "indexes": [
     {
       "hashKey": "domain",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "identity._permalink",
       "rangeKey": "_time"
     }
   ]

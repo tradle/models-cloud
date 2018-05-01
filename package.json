@@ -1,7 +1,7 @@
 {
   "name": "@tradle/models-cloud",
   "version": "1.0.0",
-  "main": "./models.json",
+  "main": "index.js",
   "repository": "https://github.com/tradle/models-cloud",
   "author": "Mark Vayngrib <mark@tradle.io>",
   "license": "MIT",

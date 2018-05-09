@@ -27,8 +27,17 @@
       "type": "string",
       "description": "client identity permalink"
     },
-    "time": {
-      "type": "number"
+    "dateCreated": {
+      "type": "date"
+    },
+    "dateConnected": {
+      "type": "date"
+    },
+    "dateAuthenticated": {
+      "type": "date"
+    },
+    "dateSubscribed": {
+      "type": "date"
     }
   },
   "required": [

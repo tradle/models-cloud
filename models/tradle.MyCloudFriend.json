@@ -29,6 +29,10 @@
   ],
   "indexes": [
     {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    },
+    {
       "hashKey": "domain",
       "rangeKey": "_time"
     },

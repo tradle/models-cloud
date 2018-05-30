@@ -48,5 +48,10 @@
     "hashKey": "permalink",
     "rangeKey": "clientId"
   },
-  "indexes": []
+  "indexes": [
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ]
 }

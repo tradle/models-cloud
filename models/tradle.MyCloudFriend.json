@@ -29,15 +29,15 @@
   ],
   "indexes": [
     {
-      "hashKey": "_t",
-      "rangeKey": "_time"
-    },
-    {
       "hashKey": "domain",
       "rangeKey": "_time"
     },
     {
       "hashKey": "identity._permalink",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
       "rangeKey": "_time"
     }
   ]

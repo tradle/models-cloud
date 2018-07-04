@@ -28,5 +28,20 @@
   "required": [
     "deploymentUUID",
     "configuration"
+  ],
+  "indexes": [
+    {
+      "hashKey": "deploymentUUID"
+    },
+    {
+      "hashKey": "stackId"
+    },
+    {
+      "hashKey": "identity._permalink"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
   ]
 }

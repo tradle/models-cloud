@@ -1,0 +1,32 @@
+{
+  "id": "tradle.cloud.TmpSNSTopic",
+  "title": "Temporary SNS Topic",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "topic": {
+      "displayName": true,
+      "type": "string"
+    },
+    "dateExpires": {
+      "type": "date"
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "topic"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "dateExpires"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ],
+  "required": [
+    "topic",
+    "dateExpires"
+  ]
+}

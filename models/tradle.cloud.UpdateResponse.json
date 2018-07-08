@@ -1,0 +1,38 @@
+{
+  "type": "tradle.Model",
+  "title": "Update Response",
+  "id": "tradle.cloud.UpdateResponse",
+  "properties": {
+    "templateUrl": {
+      "type": "string"
+    },
+    "notificationTopics": {
+      "type": "string",
+      "description": "SNS topics csv"
+    },
+    "request": {
+      "type": "object",
+      "ref": "tradle.cloud.UpdateRequest"
+    },
+    "provider": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    }
+  },
+  "required": [
+    "templateUrl",
+    "notificationTopics",
+    "request",
+    "provider"
+  ],
+  "indexes": [
+    {
+      "hashKey": "provider._permalink",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "tradle.Model",
+  "title": "Update Request",
+  "id": "tradle.cloud.UpdateRequest",
+  "properties": {
+    "service": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    }
+  },
+  "required": [
+    "service",
+    "stage",
+    "region",
+    "provider"
+  ],
+  "indexes": [
+    {
+      "hashKey": "provider._permalink",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ]
+}

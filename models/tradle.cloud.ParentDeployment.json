@@ -1,0 +1,35 @@
+{
+  "type": "tradle.Model",
+  "title": "Parent MyCloud Deployment",
+  "id": "tradle.cloud.ParentDeployment",
+  "properties": {
+    "apiUrl": {
+      "type": "string"
+    },
+    "friend": {
+      "type": "object",
+      "ref": "tradle.MyCloudFriend"
+    },
+    "parentIdentity": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "childIdentity": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    }
+  },
+  "required": [
+    "parentIdentity",
+    "childIdentity"
+  ],
+  "indexes": [
+    {
+      "hashKey": "childIdentity._permalink"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ]
+}

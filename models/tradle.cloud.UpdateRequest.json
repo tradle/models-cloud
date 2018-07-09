@@ -15,6 +15,12 @@
     "provider": {
       "type": "object",
       "ref": "tradle.Identity"
+    },
+    "currentVersion": {
+      "type": "string"
+    },
+    "currentCommit": {
+      "type": "string"
     }
   },
   "required": [

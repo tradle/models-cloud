@@ -23,6 +23,9 @@
     "configuredBy": {
       "type": "object",
       "ref": "tradle.Identity"
+    },
+    "status": {
+      "type": "string"
     }
   },
   "required": [

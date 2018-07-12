@@ -1,0 +1,47 @@
+{
+  "type": "tradle.Model",
+  "title": "Version Info",
+  "id": "tradle.cloud.VersionInfo",
+  "properties": {
+    "tag": {
+      "type": "string",
+      "description": "semantic version or named tag"
+    },
+    "branch": {
+      "type": "string",
+      "description": "git branch"
+    },
+    "commit": {
+      "type": "string",
+      "description": "git commit hash"
+    },
+    "templateUrl": {
+      "type": "string",
+      "description": "stack template url"
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "_org",
+      "rangeKey": "tag"
+    },
+    {
+      "hashKey": "_org",
+      "rangeKey": "commit"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ],
+  "viewCols": [
+    "tag",
+    "templateUrl"
+  ],
+  "required": [
+    "tag",
+    "branch",
+    "commit",
+    "templateUrl"
+  ]
+}

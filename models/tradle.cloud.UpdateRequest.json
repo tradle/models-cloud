@@ -16,10 +16,14 @@
       "type": "object",
       "ref": "tradle.Identity"
     },
-    "currentVersion": {
+    "adminEmail": {
       "type": "string"
     },
-    "currentCommit": {
+    "tag": {
+      "type": "string",
+      "description": "version tag"
+    },
+    "stackId": {
       "type": "string"
     }
   },
@@ -27,12 +31,19 @@
     "service",
     "stage",
     "region",
-    "provider"
+    "provider",
+    "adminEmail",
+    "tag",
+    "stackId"
   ],
   "indexes": [
     {
-      "hashKey": "provider._permalink",
+      "hashKey": ["_org", "provider._permalink"],
       "rangeKey": "_time"
+    },
+    {
+      "hashKey": ["_org", "provider._permalink"],
+      "rangeKey": "tag"
     },
     {
       "hashKey": "_t",

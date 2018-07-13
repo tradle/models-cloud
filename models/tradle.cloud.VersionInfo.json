@@ -5,25 +5,34 @@
   "properties": {
     "tag": {
       "type": "string",
-      "description": "semantic version or named tag"
+      "description": "semantic version or named tag",
+      "readOnly": true
+    },
+    "sortableTag": {
+      "type": "string",
+      "description": "alphabetically sortable encoding of tag",
+      "readOnly": true
     },
     "branch": {
       "type": "string",
-      "description": "git branch"
+      "description": "git branch",
+      "readOnly": true
     },
     "commit": {
       "type": "string",
-      "description": "git commit hash"
+      "description": "git commit hash",
+      "readOnly": true
     },
     "templateUrl": {
       "type": "string",
-      "description": "stack template url"
+      "description": "stack template url",
+      "readOnly": true
     }
   },
   "indexes": [
     {
       "hashKey": "_org",
-      "rangeKey": "tag"
+      "rangeKey": "sortableTag"
     },
     {
       "hashKey": "_org",
@@ -40,6 +49,7 @@
   ],
   "required": [
     "tag",
+    "sortableTag",
     "branch",
     "commit",
     "templateUrl"

@@ -28,10 +28,6 @@
       "type": "string"
     }
   },
-  "required": [
-    "deploymentUUID",
-    "configuration"
-  ],
   "indexes": [
     {
       "hashKey": "deploymentUUID"

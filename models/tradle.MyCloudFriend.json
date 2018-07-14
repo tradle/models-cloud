@@ -12,6 +12,9 @@
     "domain": {
       "type": "string"
     },
+    "domainVerified": {
+      "type": "boolean"
+    },
     "identity": {
       "type": "object",
       "ref": "tradle.Identity"
@@ -26,6 +29,11 @@
     "name",
     "url",
     "domain"
+  ],
+  "viewCols": [
+    "name",
+    "domain",
+    "domainVerified"
   ],
   "indexes": [
     {

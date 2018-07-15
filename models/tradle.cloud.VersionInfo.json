@@ -51,7 +51,6 @@
     "tag",
     "sortableTag",
     "branch",
-    "commit",
-    "templateUrl"
+    "commit"
   ]
 }

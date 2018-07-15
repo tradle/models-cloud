@@ -26,6 +26,11 @@
     },
     "status": {
       "type": "string"
+    },
+    "version": {
+      "type": "object",
+      "ref": "tradle.cloud.VersionInfo",
+      "inlined": true
     }
   },
   "indexes": [
@@ -37,6 +42,10 @@
     },
     {
       "hashKey": "identity._permalink"
+    },
+    {
+      "hashKey": "version.tag",
+      "rangeKey": "stackId"
     },
     {
       "hashKey": "_t",

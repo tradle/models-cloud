@@ -27,7 +27,6 @@
   },
   "required": [
     "templateUrl",
-    "notificationTopics",
     "request",
     "provider",
     "tag",

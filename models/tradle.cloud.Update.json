@@ -19,7 +19,6 @@
   },
   "required": [
     "templateUrl",
-    "notificationTopics",
     "tag",
     "sortableTag"
   ],

@@ -1,7 +1,6 @@
 {
   "id": "tradle.cloud.TmpSNSTopic",
   "title": "Temporary SNS Topic",
-  "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
     "topic": {

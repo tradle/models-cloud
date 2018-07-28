@@ -31,6 +31,9 @@
       "type": "object",
       "ref": "tradle.cloud.VersionInfo",
       "inlined": true
+    },
+    "adminEmail": {
+      "type": "string"
     }
   },
   "indexes": [

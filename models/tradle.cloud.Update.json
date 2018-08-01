@@ -15,6 +15,10 @@
     },
     "sortableTag": {
       "type": "string"
+    },
+    "releaseChannel": {
+      "type": "object",
+      "ref": "tradle.cloud.ReleaseChannel"
     }
   },
   "required": [

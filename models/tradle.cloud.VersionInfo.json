@@ -27,6 +27,10 @@
       "type": "string",
       "description": "stack template url",
       "readOnly": true
+    },
+    "releaseChannel": {
+      "type": "object",
+      "ref": "tradle.cloud.ReleaseChannel"
     }
   },
   "indexes": [

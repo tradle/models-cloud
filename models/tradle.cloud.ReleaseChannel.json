@@ -1,0 +1,17 @@
+{
+  "id": "tradle.cloud.ReleaseChannel",
+  "title": "Release Channel",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "releaseType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "stable", "title": "Stable" },
+    { "id": "releasecandidate", "title": "Release Candidate" },
+    { "id": "transition", "title": "Transition" }
+  ]
+}

@@ -46,7 +46,8 @@
     "name",
     "domain",
     "adminEmail",
-    "hrEmail"
+    "hrEmail",
+    "blockchain"
   ],
   "editCols": [
     "name",
@@ -54,6 +55,7 @@
     "region",
     "adminEmail",
     "hrEmail",
+    "blockchain",
     "stackPrefix"
   ],
   "required": [

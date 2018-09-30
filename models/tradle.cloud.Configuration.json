@@ -30,6 +30,11 @@
       "ref": "tradle.cloud.AWSRegion",
       "description": "AWS Region"
     },
+    "blockchain": {
+      "type": "object",
+      "ref": "tradle.BlockchainNetwork",
+      "description": "blockchain network to use"
+    },
     "stackPrefix": {
       "type": "string",
       "title": "Stack name, must be alphanumeric, e.g. mytradle",
@@ -57,6 +62,7 @@
     "adminEmail",
     "hrEmail",
     "region",
+    "blockchain",
     "stackPrefix"
   ]
 }

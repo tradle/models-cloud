@@ -19,6 +19,10 @@
     "adminEmail": {
       "type": "string"
     },
+    "blockchain": {
+      "type": "object",
+      "ref": "tradle.BlockchainNetwork"
+    },
     "tag": {
       "type": "string",
       "description": "version tag"
@@ -33,6 +37,7 @@
     "region",
     "provider",
     "adminEmail",
+    "blockchain",
     "tag",
     "stackId"
   ],

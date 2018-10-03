@@ -7,6 +7,10 @@
     "myProductId": {
       "title": "MyCloud ID",
       "type": "string"
+    },
+    "owner": {
+      "type": "object",
+      "ref": "tradle.Identity"
     }
   },
   "required": [

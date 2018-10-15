@@ -31,6 +31,11 @@
     "releaseChannel": {
       "type": "object",
       "ref": "tradle.cloud.ReleaseChannel"
+    },
+    "reasonDisabled": {
+      "type": "string",
+      "readOnly": true,
+      "description": "if this update was disabled after release, this is why"
     }
   },
   "indexes": [

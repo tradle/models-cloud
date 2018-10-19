@@ -37,8 +37,8 @@
     },
     "stackPrefix": {
       "type": "string",
-      "title": "Stack name, must be alphanumeric, e.g. mytradle",
-      "pattern": "^[a-zA-Z][a-zA-Z0-9-]+$",
+      "title": "Stack name, lowercase alphabet letters only, 2-6 chars",
+      "pattern": "^[a-z]{2,6}$",
       "default": "tradle"
     }
   },

@@ -3,6 +3,7 @@
   "title": "MyCloud Configuration",
   "id": "tradle.cloud.Configuration",
   "subClassOf": "tradle.Form",
+  "notShareable": true,
   "properties": {
     "name": {
       "type": "string",

@@ -7,9 +7,11 @@
   "license": "MIT",
   "devDependencies": {
     "@tradle/models": "github:tradle/models",
-    "@tradle/pack-models": "^2.0.0",
+    "@tradle/pack-models": "^2.1.2",
     "@tradle/validate-model": "^7.1.1",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "json-stable-stringify": "^1.0.1",
+    "write-file-atomic": "^1.1.4"
   },
   "scripts": {
     "validate": "validate-model ./models.json --depends-on @tradle/models",

@@ -36,10 +36,6 @@
       "ref": "tradle.BlockchainNetwork",
       "description": "blockchain network to use"
     },
-    "sealInBatches": {
-      "type": "boolean",
-      "description": "if you want your MyCloud to create seals for batches vs individual objects. You can configure this later."
-    },
     "stackPrefix": {
       "type": "string",
       "title": "Stack name, lowercase alphabet letters only, 2-6 chars",

@@ -1,1 +1,1 @@
-exports = module.exports = require('./models.json')
+exports.models = require('./models.json')

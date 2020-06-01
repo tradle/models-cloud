@@ -73,6 +73,10 @@
     {
       "id": "sa.east.1",
       "title": "South America (São Paulo)"
+    },
+    {
+      "id": "me.south.1",
+      "title": "Middle East (Bahrain)"
     }
   ]
 }

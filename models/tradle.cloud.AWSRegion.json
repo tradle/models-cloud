@@ -77,6 +77,22 @@
     {
       "id": "me.south.1",
       "title": "Middle East (Bahrain)"
+    },
+    {
+      "id": "cn.north.1",
+      "title": "China (Beijing)"
+    },
+    {
+      "id": "cn.northwest.1",
+      "title": "China (Ningxia)"
+    },
+    {
+      "id": "eu.south.1",
+      "title": "EU (Milan)"
+    },
+    {
+      "id": "eu.north.1",
+      "title": "EU (Stockholm)"
     }
   ]
 }

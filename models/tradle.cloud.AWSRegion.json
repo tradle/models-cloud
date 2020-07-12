@@ -93,6 +93,10 @@
     {
       "id": "eu.north.1",
       "title": "EU (Stockholm)"
+    },
+    {
+      "id": "af.south.1",
+      "title": "Africa (Cape Town)"
     }
   ]
 }
